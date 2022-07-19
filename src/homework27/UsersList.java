@@ -13,6 +13,14 @@ public class UsersList {
         User user = new User();
         System.out.println("Введите логин: ");
         user.setLogin(input.readLine());
+
+        for (User element : list) {
+            if (element.getLogin().equals(user.getLogin())) {
+                System.out.println("Такой логин существует. Выберите другой.\nВведите логин: ");
+                user.setLogin(input.readLine());
+            }
+        }
+
         System.out.println("Введите пароль: ");
         user.setPassword(input.readLine());
         list.add(user);

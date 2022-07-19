@@ -34,18 +34,18 @@ public class Task01 {
             case 1:
                 UsersList.addUser();
                 break;
-            case 2:
-                UsersList.deleteUser();
-                break;
-            case 3:
-                UsersList.showUserList();
-                break;
-            case 4:
-                UsersList.loginChange();
-                break;
-            case 5:
-                UsersList.passwordChange();
-                break;
+//            case 2:
+//                UsersList.deleteUser();
+//                break;
+//            case 3:
+//                UsersList.showUserList();
+//                break;
+//            case 4:
+//                UsersList.loginChange();
+//                break;
+//            case 5:
+//                UsersList.passwordChange();
+//                break;
             default:
                 throw new IllegalArgumentException("Неверный ввод");
         }
