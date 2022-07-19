@@ -34,6 +34,8 @@ public class UsersList {
         for (User element : list) {
             if (element.getLogin().equals(login)) {
                 list.remove(element);
+            } else {
+                System.out.println("Логина в базе нет.");
             }
         }
 
