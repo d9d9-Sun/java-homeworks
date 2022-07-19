@@ -47,6 +47,9 @@ public class Task01 {
 //            case 5:
 //                UsersList.passwordChange();
 //                break;
+            case 6:
+                UsersList.showUserList();
+                break;
             default: {
                 System.out.println("Неверный ввод.");
                 showMenu();
