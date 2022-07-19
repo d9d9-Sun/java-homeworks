@@ -27,4 +27,23 @@ public class UsersList {
         Task01.showMenu();
     }
 
+    public static void deleteUser() throws IOException {
+        System.out.println("Введите логин пользователя для удаления: ");
+        String login = input.readLine();
+
+        for (User element : list) {
+            if (element.getLogin().equals(login)) {
+                list.remove(element);
+            }
+        }
+
+        Task01.showMenu();
+    }
+
+    public static void showUserList() throws IOException {
+        System.out.println("Список пользователей: ");
+        list.forEach(x -> System.out.print(x + " "));
+        Task01.showMenu();
+    }
+
 }

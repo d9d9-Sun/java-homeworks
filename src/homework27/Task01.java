@@ -16,12 +16,13 @@ public class Task01 {
     }
 
     public static void showMenu() throws IOException {
-        System.out.println("Введите цифру: " +
+        System.out.println("Меню: " +
                 "\n1 - добавить нового пользователя" +
                 "\n2 - удалить существующего пользователя" +
                 "\n3 - проверить, существует ли пользователь" +
                 "\n4 - изменить логин существующего пользователя" +
-                "\n5 - изменить пароль существующего пользователя");
+                "\n5 - изменить пароль существующего пользователя" +
+                "\nВведите цифру меню: ");
 
         int number = 0;
         try {
@@ -34,11 +35,11 @@ public class Task01 {
             case 1:
                 UsersList.addUser();
                 break;
-//            case 2:
-//                UsersList.deleteUser();
-//                break;
+            case 2:
+                UsersList.deleteUser();
+                break;
 //            case 3:
-//                UsersList.showUserList();
+//                UsersList.checkUser();
 //                break;
 //            case 4:
 //                UsersList.loginChange();
