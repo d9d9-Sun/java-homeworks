@@ -32,13 +32,13 @@ public class Task01 {
 
         switch (number) {
             case 1:
-                UsersList.add();
+                UsersList.addUser();
                 break;
             case 2:
-                UsersList.delete();
+                UsersList.deleteUser();
                 break;
             case 3:
-                UsersList.show();
+                UsersList.showUserList();
                 break;
             case 4:
                 UsersList.loginChange();
