@@ -30,13 +30,17 @@ public class UsersList {
     public static void deleteUser() throws IOException {
         System.out.println("Введите логин пользователя для удаления: ");
         String login = input.readLine();
-
+        boolean temp = false;
         for (User element : list) {
             if (element.getLogin().equals(login)) {
                 list.remove(element);
-            } else {
-                System.out.println("Логина в базе нет.");
+                temp = true;
+                break;
             }
+        }
+
+        if (!temp) {
+            System.out.println("Такого пользователя нет в базе.");
         }
 
         Task01.showMenu();

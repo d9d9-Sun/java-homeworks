@@ -11,7 +11,7 @@ public class Task01 {
         try {
             showMenu();
         } catch (Exception e) {
-            System.out.println("Ошибка" + e);
+            System.out.println("Ошибка " + e);
         }
     }
 
@@ -47,8 +47,10 @@ public class Task01 {
 //            case 5:
 //                UsersList.passwordChange();
 //                break;
-            default:
-                throw new IllegalArgumentException("Неверный ввод");
+            default: {
+                System.out.println("Неверный ввод.");
+                showMenu();
+            }
         }
     }
 }
