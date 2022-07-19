@@ -46,6 +46,26 @@ public class UsersList {
         Task01.showMenu();
     }
 
+    public static void checkUser() throws IOException {
+        System.out.println("Введите логин: ");
+        String login = input.readLine();
+
+        boolean temp = false;
+        for (User element : list) {
+            if (element.getLogin().equals(login)) {
+                System.out.println("Такой пользователь существует.");
+                temp = true;
+                break;
+            }
+        }
+
+        if (!temp) {
+            System.out.println("Такого пользователя нет в базе.");
+        }
+
+        Task01.showMenu();
+    }
+
     public static void showUserList() throws IOException {
         System.out.println("Список пользователей: ");
         list.forEach(x -> System.out.print(x + " "));

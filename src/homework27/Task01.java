@@ -22,6 +22,7 @@ public class Task01 {
                 "\n3 - проверить, существует ли пользователь" +
                 "\n4 - изменить логин существующего пользователя" +
                 "\n5 - изменить пароль существующего пользователя" +
+                "\n6 - показать список пользователей" +
                 "\nВведите цифру меню: ");
 
         int number = 0;
@@ -38,9 +39,9 @@ public class Task01 {
             case 2:
                 UsersList.deleteUser();
                 break;
-//            case 3:
-//                UsersList.checkUser();
-//                break;
+            case 3:
+                UsersList.checkUser();
+                break;
 //            case 4:
 //                UsersList.loginChange();
 //                break;
