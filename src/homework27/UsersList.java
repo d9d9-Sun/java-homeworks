@@ -30,6 +30,7 @@ public class UsersList {
     public static void deleteUser() throws IOException {
         System.out.println("Введите логин пользователя для удаления: ");
         String login = input.readLine();
+
         boolean temp = false;
         for (User element : list) {
             if (element.getLogin().equals(login)) {
@@ -54,6 +55,29 @@ public class UsersList {
         for (User element : list) {
             if (element.getLogin().equals(login)) {
                 System.out.println("Такой пользователь существует.");
+                temp = true;
+                break;
+            }
+        }
+
+        if (!temp) {
+            System.out.println("Такого пользователя нет в базе.");
+        }
+
+        Task01.showMenu();
+    }
+
+    public static void loginChange() throws IOException {
+        System.out.println("Введите какой логин нужно изменить?");
+        String login = input.readLine();
+
+        System.out.println("Введите новый логин: ");
+        String newLogin = input.readLine();
+
+        boolean temp = false;
+        for (User element : list) {
+            if (element.getLogin().equals(login)) {
+                element.setLogin(newLogin);
                 temp = true;
                 break;
             }
