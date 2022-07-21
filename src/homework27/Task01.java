@@ -45,9 +45,9 @@ public class Task01 {
             case 4:
                 UsersList.loginChange();
                 break;
-//            case 5:
-//                UsersList.passwordChange();
-//                break;
+            case 5:
+                UsersList.passwordChange();
+                break;
             case 6:
                 UsersList.showUserList();
                 break;

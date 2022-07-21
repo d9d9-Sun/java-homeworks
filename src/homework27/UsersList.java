@@ -90,6 +90,29 @@ public class UsersList {
         Task01.showMenu();
     }
 
+    public static void passwordChange() throws IOException {
+        System.out.println("Введите для какого логина нужно изменить пароль?");
+        String login = input.readLine();
+
+        System.out.println("Введите новый пароль: ");
+        String newPassword = input.readLine();
+
+        boolean temp = false;
+        for (User element : list) {
+            if (element.getLogin().equals(login)) {
+                element.setPassword(newPassword);
+                temp = true;
+                break;
+            }
+        }
+
+        if (!temp) {
+            System.out.println("Такого пользователя нет в базе.");
+        }
+
+        Task01.showMenu();
+    }
+
     public static void showUserList() throws IOException {
         System.out.println("Список пользователей: ");
         list.forEach(x -> System.out.print(x + " "));
