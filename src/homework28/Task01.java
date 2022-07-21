@@ -3,6 +3,7 @@ package homework28;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.TreeSet;
 
 public class Task01 {
@@ -15,11 +16,7 @@ public class Task01 {
         numberLine = numberLine.replace(",", " ");
         String[] numberLineArray = numberLine.split(" ");
 
-        TreeSet<String> result = new TreeSet<>();
-
-        for (String element : numberLineArray) {
-            result.add(element);
-        }
+        TreeSet<String> result = new TreeSet<>(Arrays.asList(numberLineArray));
 
         result.forEach(x -> System.out.print(x + " "));
 
