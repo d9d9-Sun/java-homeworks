@@ -13,7 +13,7 @@ public class Task01 {
         System.out.println("Введите цифры в строку: ");
         String numberLine = input.readLine();
 
-        numberLine = numberLine.replace(",", " ");
+        numberLine = numberLine.replaceAll  ("[^0-9]+", " ");
         String[] numberLineArray = numberLine.split(" ");
 
         TreeSet<String> result = new TreeSet<>(Arrays.asList(numberLineArray));
