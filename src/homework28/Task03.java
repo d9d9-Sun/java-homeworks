@@ -3,6 +3,7 @@ package homework28;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class Task03 {
@@ -70,7 +71,16 @@ public class Task03 {
         if (k >= numbers.size()) {
             System.out.println("Сейчас во множестве " + numbers.size() + " чисел. Ваш индекс больше.");
         } else {
-            System.out.println(numbers.headSet(k));
+            Iterator<Integer> integerIterator = numbers.iterator();
+            int counter = 0;
+            while (integerIterator.hasNext()) {
+                if (k == counter) {
+                    System.out.println("В нашем множестве на позиции " + k + " стоит число " + integerIterator.next());
+                    return;
+                }
+                integerIterator.next();
+                counter++;
+            }
         }
         showMenu();
     }
