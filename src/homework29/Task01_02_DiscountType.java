@@ -1,4 +1,7 @@
 package homework29;
 
-public enum DiscountType {
+public enum Task01_02_DiscountType {
+    VIP,
+    STANDARD,
+    MEDIUM
 }
