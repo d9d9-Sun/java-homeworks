@@ -8,7 +8,7 @@ public class Menu {
     public static BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 
     public static void showMenu() throws IOException {
-        System.out.println("Меню:\n" +
+        System.out.print("Меню:\n" +
                 "1 - полная распечатка базы данных\n" +
                 "2 - распечатка данных по конкретному коду\n" +
                 "3 - распечатка данных по конкретному типу штрафа\n" +
@@ -17,35 +17,35 @@ public class Menu {
                 "6 - добавление новых штрафов для уже существующей записи\n" +
                 "7 - удаление штрафа\n" +
                 "8 - замена информации о человеке и его штрафах\n" +
-                "0 - закрыть программу" +
+                "0 - закрыть программу\n" +
                 "Введите цифру меню: ");
         int choice = Integer.parseInt(input.readLine());
         switch (choice) {
             case 1:
-                showDB();
+                Methods.showDB();
                 break;
-            case 2:
-                showInfoByID();
-                break;
-            case 3:
-                showInfoByTicketType();
-                break;
-            case 4:
-                showInfoByCity();
-                break;
-            case 5:
-                addCitizen();
-                break;
-            case 6:
-                addTicket();
-                break;
-            case 7:
-                deleteTicket();
-                break;
-            case 8:
-                replaceInfo();
-                break;
-            case 9:
+//            case 2:
+//                showInfoByID();
+//                break;
+//            case 3:
+//                showInfoByTicketType();
+//                break;
+//            case 4:
+//                showInfoByCity();
+//                break;
+//            case 5:
+//                addCitizen();
+//                break;
+//            case 6:
+//                addTicket();
+//                break;
+//            case 7:
+//                deleteTicket();
+//                break;
+//            case 8:
+//                replaceInfo();
+//                break;
+            case 0:
                 System.exit(1);
             default:
                 System.out.println("Неверный ввод.");

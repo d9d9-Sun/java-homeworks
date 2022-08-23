@@ -6,9 +6,11 @@ public class Person {
     private String city;
     private TicketType ticketType;
 
-    public Person(int id, String name) {
+    public Person(int id, String name, String city, TicketType ticketType) {
         this.id = id;
         this.name = name;
+        this.city = city;
+        this.ticketType = ticketType;
     }
 
     public int getId() {
@@ -34,6 +36,6 @@ public class Person {
                 ", name='" + name + '\'' +
                 ", city='" + city + '\'' +
                 ", ticketType=" + ticketType +
-                '}';
+                "}";
     }
 }
