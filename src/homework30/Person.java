@@ -31,11 +31,9 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", city='" + city + '\'' +
-                ", ticketType=" + ticketType +
-                "}";
+        return  "id=" + id +
+                ", Имя: " + name +
+                ", Город: " + city +
+                ", Виды штрафов: " + ticketType.getTicketType();
     }
 }
