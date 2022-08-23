@@ -24,9 +24,9 @@ public class Menu {
             case 1:
                 Methods.showDB();
                 break;
-//            case 2:
-//                showInfoByID();
-//                break;
+            case 2:
+                Methods.showInfoByID();
+                break;
 //            case 3:
 //                showInfoByTicketType();
 //                break;
