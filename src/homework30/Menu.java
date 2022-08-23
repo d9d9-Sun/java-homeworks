@@ -45,6 +45,8 @@ public class Menu {
             case 8:
                 replaceInfo();
                 break;
+            case 9:
+                System.exit(1);
             default:
                 System.out.println("Неверный ввод.");
                 showMenu();
