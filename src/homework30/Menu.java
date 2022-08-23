@@ -30,21 +30,21 @@ public class Menu {
             case 3:
                 Methods.showInfoByTicketType();
                 break;
-//            case 4:
-//                showInfoByCity();
-//                break;
-//            case 5:
-//                addCitizen();
-//                break;
-//            case 6:
-//                addTicket();
-//                break;
-//            case 7:
-//                deleteTicket();
-//                break;
-//            case 8:
-//                replaceInfo();
-//                break;
+            case 4:
+                Methods.showInfoByCity();
+                break;
+            case 5:
+                Methods.addCitizen();
+                break;
+            case 6:
+                Methods.addTicket();
+                break;
+            case 7:
+                Methods.deleteTicket();
+                break;
+            case 8:
+                Methods.replaceInfo();
+                break;
             case 0:
                 System.exit(1);
             default:
