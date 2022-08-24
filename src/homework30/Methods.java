@@ -1,8 +1,5 @@
 package homework30;
 
-import homework27.Task01;
-import homework27.User;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
