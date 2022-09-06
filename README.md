@@ -4,6 +4,10 @@ Each homework has it's own package with README.md file with tasks descriptions a
 
 <ins>Fast navigation (last at top):</ins>
 
+[homework33](https://github.com/d9d9-Sun/java-homeworks/tree/main/src/homework33)
+
+[homework32](https://github.com/d9d9-Sun/java-homeworks/tree/main/src/homework32)
+
 [homework31](https://github.com/d9d9-Sun/java-homeworks/tree/main/src/homework31)
 
 [homework30](https://github.com/d9d9-Sun/java-homeworks/tree/main/src/homework30)
