@@ -53,12 +53,12 @@ public class CarThread extends Thread {
         Thread.sleep(seconds * 1000);
     }
 
-    public static List<Thread> createCars(int carQty, Parking parking) {
+    public static List<Thread> createCars(int carAmount, Parking parking) {
         List<Thread> carList = new ArrayList<>();
-        for (int carNumber = 0; carNumber < carQty; carNumber++) {
-            int waitTime = (int) (Math.random() * 25);
+        for (int carNumber = 0; carNumber < carAmount; carNumber++) {
+            int waitTime = (int) (Math.random() * 20);
             int startTime = (int) (Math.random() * 5);
-            int parkedTime = (int) (Math.random() * 25);
+            int parkedTime = (int) (Math.random() * 20);
             carList.add(new CarThread(waitTime, startTime, parkedTime, parking));
         }
 
