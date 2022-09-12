@@ -42,7 +42,7 @@ public class CarThread extends Thread {
 
     @Override
     public String toString() {
-        return "Thread number: " + number
+        return "Car number: " + number
                 + " waitTime: " + waitTime
                 + " startTime:" + startTime
                 + " parkedTime:" + parkedTime
@@ -50,7 +50,7 @@ public class CarThread extends Thread {
     }
 
     public void wait(int seconds) throws InterruptedException {
-        Thread.sleep(seconds * 1000);
+        Thread.sleep(seconds * 10);
     }
 
     public static List<Thread> createCars(int carAmount, Parking parking) {
