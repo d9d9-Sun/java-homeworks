@@ -4,8 +4,6 @@ public class Task {
     public static void main(String[] args) throws InterruptedException {
         int h = (int) (Math.random() * 50); //размер горшка
         int n = (int) (Math.random() * 10); //количество пчёл
-        int loops = (int) (Math.random() * 10); //количество повторений программы
-        int count = 0;
 
         System.out.println("Размер горшка " + h);
         System.out.println("Количество пчёл " + n);
@@ -20,6 +18,5 @@ public class Task {
         }
 
         bear.join();
-
     }
 }
