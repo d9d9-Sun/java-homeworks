@@ -1,11 +1,8 @@
 package homework38;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
-public class Task01 {
+public class Task02 {
     public static void main(String[] args) throws IOException {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 
@@ -15,7 +12,8 @@ public class Task01 {
         System.out.println("Введите слово для поиска: ");
         String word = input.readLine();
 
-        int count = 0;
+        System.out.println("Введите слово для замены: ");
+        String replace = input.readLine();
 
         FileInputStream inputStream = new FileInputStream(path);
         int i;
@@ -26,13 +24,20 @@ public class Task01 {
         inputStream.close();
 
         String[] text = new String(temp).split(" ");
+
+        FileOutputStream outputStream = new FileOutputStream(path);
+
+        int counter = 0;
         for (String t : text) {
-            if (t.equalsIgnoreCase(word)) {
-                count++;
+            if (word.equalsIgnoreCase(t)) {
+                t = replace;
+                counter++;
             }
+            outputStream.write((t + " ").getBytes());
         }
 
-        System.out.println("Слово встречается в файле " + count + " раз.");
+        outputStream.close();
 
+        System.out.println("Количество замен: " + counter);
     }
 }
