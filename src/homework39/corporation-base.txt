@@ -1,0 +1,5 @@
+Yarmakovich, 33, CEO, 999$/hour
+Pakuts, 32, General Manager, 720$/hour
+Korzenko, 32, Manager, 500$/hour
+Gogol, 50, HR, 999$/hour
+Tolstoy, 99, Technical Writer, 499$/hour
