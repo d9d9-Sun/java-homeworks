@@ -19,24 +19,24 @@ public class Menu {
                 "Введите цифру меню: ");
         int choice = Integer.parseInt(input.readLine());
         switch (choice) {
-            case 1:
-                prepareHotDog();
-                break;
-            case 2:
-                createRecipe();
-                break;
-            case 3:
-                showNumberOfSoldHotDogs();
-                break;
-            case 4:
-                showRevenue();
-                break;
-            case 5:
-                showProfit();
-                break;
-            case 6:
-                IngredientsInStock();
-                break;
+//            case 1:
+//                prepareHotDog();
+//                break;
+//            case 2:
+//                createRecipe();
+//                break;
+//            case 3:
+//                showNumberOfSoldHotDogs();
+//                break;
+//            case 4:
+//                showRevenue();
+//                break;
+//            case 5:
+//                showProfit();
+//                break;
+//            case 6:
+//                IngredientsInStock();
+//                break;
             case 0:
                 System.exit(1);
             default:
