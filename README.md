@@ -4,6 +4,8 @@ Each homework has it's own package with README.md file with tasks descriptions a
 
 <ins>Fast navigation (last at top):</ins>
 
+[waHomework03](https://github.com/d9d9-Sun/java-homeworks/tree/main/waHomeWork03)
+
 [waHomework02](https://github.com/d9d9-Sun/java-homeworks/tree/main/waHomeWork02)
 
 [waHomework01](https://github.com/d9d9-Sun/java-homeworks/tree/main/waHomeWork01)
