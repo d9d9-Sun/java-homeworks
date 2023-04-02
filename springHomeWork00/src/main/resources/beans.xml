@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cat" class="by.mad.Cat"></bean>
+    <bean id="dog" class="by.mad.Dog"></bean>
+    <bean id="cow" class="by.mad.Cow"></bean>
+
+    <bean id="farm" class="by.mad.Farm">
+        <constructor-arg name="animal">
+            <list>
+                <ref bean="cat"></ref>
+                <ref bean="dog"></ref>
+                <ref bean="cow"></ref>
+            </list>
+        </constructor-arg>
+    </bean>
+</beans>
