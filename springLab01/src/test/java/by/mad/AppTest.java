@@ -1,4 +1,4 @@
-package org.example;
+package by.mad;
 
 import static org.junit.Assert.assertTrue;
 

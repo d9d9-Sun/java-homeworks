@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <context:property-placeholder location="classpath:factory.properties" />
+    <bean id="cake" class="by.mad.Cake">
+        <property name="sweetName" value="Весна" />
+        <property name="size">
+            <list>
+                <value>100</value>
+                <value>150</value>
+                <value>500</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="pie" class="by.mad.Pie" scope="prototype">
+        <constructor-arg name="cookName" value="" />
+        <constructor-arg name="discount" value="5" />
+        <property name="price">
+            <map>
+                <entry key="Десерт 1" value = "5" />
+                <entry key="Десерт 2" value = "2" />
+                <entry key="Десерт 3" value = "7" />
+            </map>
+        </property>
+        <property name="cookName" value="${cook.name}" />
+    </bean>
+
+    <bean id="factory" class="by.mad.Factory" >
+        <constructor-arg index="0" name="sweet" ref="cake"/>
+        <constructor-arg index="1" name="count" value="4"/>
+        <property name="factoryName" value="${factory.name}" />
+    </bean>
+
+
+</beans>
