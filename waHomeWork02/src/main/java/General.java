@@ -7,5 +7,8 @@ public class General {
     public static void main(String[] args) {
         ConnectorDB.createFitnessDB();
         ConnectorDB.createFitnessDBTables();
+        ConnectorDB.findInstructorOver30();
+        ConnectorDB.addNewTrainer();
+        ConnectorDB.findInstructor();
     }
 }
