@@ -4,6 +4,8 @@ Each homework has it's own package with README.md file with tasks descriptions a
 
 <ins>Fast navigation (last at top):</ins>
 
+[springHomeWork01](https://github.com/d9d9-Sun/java-homeworks/tree/main/springHomeWork01)
+
 [springHomeWork00](https://github.com/d9d9-Sun/java-homeworks/tree/main/springHomeWork00)
 
 ---
